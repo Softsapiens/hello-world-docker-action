@@ -5,3 +5,7 @@
 
 We are gonna define some workflow using docker actions, and we are gonna try to run it into a docker
 github runner instances.
+
+== References
+
+. https://help.github.com/en/actions/creating-actions/creating-a-docker-container-action
