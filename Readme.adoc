@@ -14,6 +14,16 @@ link:https://github.com/Softsapiens/docker-github-actions-runner[Here] there is 
 > NOTE: Whenever runner version changes, the runner image should be recreated using the latest
 > runner in order to avoid autoupgrade situation.
 
+*IMPORTANT*: It's mandatory to execute docker runners as presented:
+
+```
+docker run -it --rm --name runner -v /var/run/docker.sock:/var/run/docker.sock \ 
+-e RUNNER_ALLOW_RUNASROOT=1 \
+-e GITHUB_REPOSITORY="https://github.com/Softsapiens/hello-world-docker-action" \ 
+-e GITHUB_TOKEN="xxxxx" \
+-e RUNNER_NAME="dpm-docker-runner-1" -e REPLACE_EXISTING_RUNNER="true"  github-runner:2.263.0`
+```
+
 == References
 
 . https://help.github.com/en/actions/creating-actions/creating-a-docker-container-action
