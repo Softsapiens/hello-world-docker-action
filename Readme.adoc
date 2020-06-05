@@ -6,6 +6,14 @@
 We are gonna define some workflow using docker actions, and we are gonna try to run it into a docker
 github runner instances.
 
+
+== Github Runner Image
+
+link:https://github.com/Softsapiens/docker-github-actions-runner[Here] there is an available docker image using the current latest version 2.263.0
+
+> NOTE: Whenever runner version changes, the runner image should be recreated using the latest
+> runner in order to avoid autoupgrade situation.
+
 == References
 
 . https://help.github.com/en/actions/creating-actions/creating-a-docker-container-action
