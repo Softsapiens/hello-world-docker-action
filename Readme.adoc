@@ -27,3 +27,4 @@ docker run -it --rm --name runner -v /var/run/docker.sock:/var/run/docker.sock \
 == References
 
 . https://help.github.com/en/actions/creating-actions/creating-a-docker-container-action
+. http://jpetazzo.github.io/2015/09/03/do-not-use-docker-in-docker-for-ci/
